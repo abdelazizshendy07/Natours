@@ -1,0 +1,69 @@
+.raw {
+    max-width: $grid-width;
+    margin: 0 auto;
+    //background-color: $color-gray-white;
+    margin-bottom: $gutter-virtical;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-virtical;
+
+        @include respond(tab-port) {
+            margin-bottom: $gutter-virtical-small;
+        }
+
+
+    }
+
+    @include respond(tab-port) {
+        max-width: $grid-width-small;
+    }
+
+
+
+    @include clearfix;
+
+    [class^="col-"] {
+        // background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horzntal;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-virtical-small;
+            }
+
+
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
+        }
+
+    }
+
+
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horzntal})/2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horzntal})/3);
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horzntal})/3) + #{$gutter-horzntal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horzntal})/4);
+    }
+
+
+
+
+
+
+}
