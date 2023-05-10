@@ -9,12 +9,12 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  /*backface-visibility: hidden;*/
+   backface-visibility: hidden; 
   margin-bottom: 5rem;
-  //display: block;
+  
 
   &--main {
-    //display: block;
+    display: block;
     padding: 1rem;
     font-size: 6rem;
     font-weight: 400;

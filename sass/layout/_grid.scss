@@ -1,29 +1,24 @@
 .raw {
     max-width: $grid-width;
     margin: 0 auto;
-    //background-color: $color-gray-white;
-    margin-bottom: $gutter-virtical;
-
+    
     &:not(:last-child) {
         margin-bottom: $gutter-virtical;
 
         @include respond(tab-port) {
             margin-bottom: $gutter-virtical-small;
         }
-
-
     }
 
     @include respond(tab-port) {
         max-width: $grid-width-small;
+        padding: 0 3rem;
     }
-
 
 
     @include clearfix;
 
     [class^="col-"] {
-        // background-color: orangered;
         float: left;
 
         &:not(:last-child) {
@@ -33,8 +28,6 @@
                 margin-right: 0;
                 margin-bottom: $gutter-virtical-small;
             }
-
-
         }
 
         @include respond(tab-port) {

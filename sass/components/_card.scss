@@ -1,7 +1,6 @@
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
-    //  box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
     height: 52rem;
     position: relative;
 
@@ -19,7 +18,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: .4rem;
-        //overflow: hidden;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 
 
@@ -134,7 +133,7 @@
                 padding: 1rem;
 
                 &:not(:last-child) {
-                    border-bottom: .1rem solid $color-gray-white;
+                    border-bottom: 2px solid $color-gray-white-2;
                 }
             }
         }
